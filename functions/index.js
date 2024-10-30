@@ -1,7 +1,7 @@
 // ---------------------- LIBRARIES ----------------
 const express = require('express'); // Импорт библиотеки Express JS
 const mongoose = require("mongoose")
-const Picture = require("./picture")
+const Picture = require("../picture")
 const morgan = require('morgan');
 
 const app = express();
