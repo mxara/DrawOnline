@@ -20,7 +20,7 @@ mongoose
     .catch((error) => console.log(error))
 
 app.get('/', (req, res) => {
-    res.render("index.ejs")
+    res.render("index.html")
 })
 
 app.get('/pictures', (req, res) => {
