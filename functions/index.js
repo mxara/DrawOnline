@@ -3,7 +3,6 @@ const express = require('express'); // Импорт библиотеки Express
 const mongoose = require("mongoose")
 const Picture = require("./picture")
 const morgan = require('morgan');
-const serverless = require("serverless-http")
 
 const app = express();
 
@@ -21,7 +20,7 @@ mongoose
     .catch((error) => console.log(error))
 
 app.get('/', (req, res) => {
-    res.sendFile("index.html"); // Отправьте файл index.html
+    res.render("index.ejs"); // Отправьте файл index.html
 });
 
 app.get('/pictures', (req, res) => {
@@ -60,8 +59,5 @@ app.listen(PORT, () => {
     console.log(`server started http://localhost:${PORT}`)
 })
 
-// команда запуска сервера в терминале
-// node index
-
-app.use("/.netlify/functions/api", router);
-module.exports.handler = serverless(app)
+// // команда запуска сервера в терминале
+// // node index
