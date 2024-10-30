@@ -16,8 +16,5 @@
     "mongoose": "^8.7.2",
     "morgan": "^1.10.0",
     "override": "^0.0.1",
-    "netlify-cli": "17.37.2",
-    "netlify-lambda": "^2.0.15",
-    "serverless-http": "^2.7.0"
   }
 }
